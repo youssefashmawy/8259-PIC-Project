@@ -17,7 +17,7 @@ This is the Computer Architecture project 8259 Programmable interrupt controller
 - This logic block determines the priorites of the bits set in the IRR. The highest priority is selected and strobed into the corresponding bit of the ISR during INTA pulse.
 ### Interrupt service register
 - The ISR is used to store all the interrupt levels which are being serviced.
-## Sequance of operations
+## Sequence of operations
 1. One or more of the INTERRUPT REQUEST lines (IR7±0) are raised high, setting the corresponding IRR bit(s).
 2. The 8259A evaluates these requests, and sends an INT to the CPU, if appropriate.
 3. The CPU acknowledges the INT and responds with an INTA pulse.
